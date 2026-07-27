@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bejelentkezés</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Bejelentkezés</h1>
+    <p class="lead">Add meg a felhasználóneved és jelszavad a pontozáshoz.</p>
+
+    <form id="login-form">
+      <div>
+        <label for="username">Felhasználónév</label>
+        <input type="text" id="username" name="username" autocomplete="username" required />
+      </div>
+      <div>
+        <label for="password">Jelszó</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required />
+      </div>
+      <div class="error" id="error"></div>
+      <button type="submit">Bejelentkezés</button>
+    </form>
+
+    <div class="footer-link">
+      <a href="/">← Vissza a főoldalra</a>
+    </div>
+  </div>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>
