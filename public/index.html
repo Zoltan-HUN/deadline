@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pontozó — Élő átlag</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav class="menu-bar">
+    <a href="/login.html">Bejelentkezés</a>
+    <a href="/countdown.html">Visszaszámláló</a>
+  </nav>
+
+  <div class="card card-wide">
+    <h1 class="score-title" id="score-title">A te pontszámod</h1>
+
+    <div class="tile tile-big">
+      <div class="value" id="average">—</div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

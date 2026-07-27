@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pontozás</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Pontozás</h1>
+    <p class="lead" id="welcome">Betöltés…</p>
+
+    <div id="idle-panel">
+      <button id="start-btn">Új pontozás indítása</button>
+      <div class="status" id="idle-status"></div>
+    </div>
+
+    <div id="voting-panel" style="display:none;">
+      <p class="lead" id="voting-info">Új pontozás indult!</p>
+      <div class="countdown" id="countdown">10</div>
+      <div class="score-grid" id="score-grid"></div>
+      <div class="status" id="voting-status"></div>
+    </div>
+
+    <div id="result-panel" style="display:none;">
+      <div class="tile">
+        <div class="value" id="result-average">—</div>
+        <div class="label" id="result-meta"></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a href="/" class="secondary">Főoldal</a>
+      <button class="secondary" id="logout-btn">Kijelentkezés</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/score.js"></script>
+</body>
+</html>
